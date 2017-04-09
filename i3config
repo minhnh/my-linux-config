@@ -1,5 +1,5 @@
-bindsym XF86AudioRaiseVolume exec amixer -q set IEC958 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set IEC958 2dB- unmute
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- unmute
 bindsym XF86AudioMute exec amixer -q set IEC958 toggle
 exec --no-startup-id nm-applet
-
+exec --no-startup-id xrandr --output HDMI-1 --auto --left-of eDP-1
