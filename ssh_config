@@ -1,5 +1,11 @@
 Host brs-home
     HostName home.inf.h-brs.de
+    IdentityFile ~/.ssh/id_rsa
+    User mnguy12s
+
+Host ux2o01
+    HostName ux-2o01.inf.fh-bonn-rhein-sieg.de
+    IdentityFile ~/.ssh/id_rsa
     User mnguy12s
 
 Host brs-shetanmargt48
@@ -30,5 +36,15 @@ Host cob2
 
 Host cob1
     HostName 192.168.1.101
+    IdentityFile ~/.ssh/id_rsa
+    User minh
+
+Host dorthopi3
+    HostName 172.16.1.106
+    IdentityFile ~/.ssh/id_rsa
+    User minh
+
+Host dorthopi
+    HostName 172.16.1.105
     IdentityFile ~/.ssh/id_rsa
     User minh
