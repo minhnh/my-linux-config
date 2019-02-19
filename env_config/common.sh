@@ -1,17 +1,20 @@
 # GCC directories
-export PATH="$HOME/.local/bin${PATH:+:${PATH}}"
+export PATH="$HOME/.local/bin:/snap/bin${PATH:+:${PATH}}"
 export MANPATH="$HOME/.local/man:/usr/local/share/man:/usr/share/man${MANPATH:+:${MANPATH}}"
 export CPATH="$HOME/.local/include:/usr/include:/usr/local/include${CPATH:+:${CPATH}}"
 export LIBRARY_PATH="$HOME/.local/lib${LIBRARY_PATH:+:${LIBRARY_PATH}}"
 export LD_LIBRARY_PATH="$HOME/.local/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 
 # NPM
-#export NPM_PACKAGES="${HOME}/.npm-packages"
-#export PATH="$NPM_PACKAGES/bin:$PATH"
+export PATH="$HOME/.local/node/bin:$PATH"
+export MANPATH="$HOME/.local/node/lib/node_modules/npm/man:$MANPATH"
+
+# MongoDB
+export PATH="$HOME/.local/robo3t/bin:$PATH"
 
 # GEM
-#export RUBY_VERSION="2.3.0"
-#export PATH="$HOME/.gem/ruby/$RUBY_VERSION/bin:$PATH"
+export RUBY_VERSION="2.6.0"
+export PATH="$HOME/.gem/ruby/$RUBY_VERSION/bin:$PATH"
 
 # Docker
 export DOCKER_ID_USER="minhnh91"
@@ -29,7 +32,7 @@ if [ -n "$SSH_CLIENT" ]; then
 fi
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/zsh_config/.histfile
+HISTFILE=~/.config/env_config/.histfile
 HISTSIZE=10000
 SAVEHIST=15000
 setopt appendhistory autocd
