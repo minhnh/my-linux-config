@@ -16,7 +16,7 @@ Host brs-shetanmargt48
 Host brs-tesla
     IdentityFile ~/.ssh/id_rsa
     ProxyCommand ssh brs-home -W 10.20.118.36:10022
-    User minh
+    User mnguy12s
 
 Host brs-biostore
     IdentityFile ~/.ssh/id_rsa
