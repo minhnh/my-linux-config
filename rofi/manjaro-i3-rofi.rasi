@@ -13,18 +13,18 @@
     normal-background:              rgba ( 40, 52, 58, 100 % );
     normal-foreground:              rgba ( 248, 248, 242, 70 % );
     normal-background-selected:     rgba ( 30, 38, 43, 100 % );
-    normal-foreground-selected:     rgba ( 248, 248, 242, 100 % );
-    active-background:              rgba ( 40, 52, 58, 100 % );
+    normal-foreground-selected:     @border-color;
+    active-background:              @normal-background;
     active-foreground:              rgba ( 22, 160, 133, 70 % );
     active-background-selected:     rgba ( 20, 20, 17, 100 % );
-    active-foreground-selected:     rgba ( 22, 160, 133, 100 % );
-    alternate-background:           rgba ( 40, 52, 58, 100 % );
-    alternate-foreground:           rgba ( 248, 248, 242, 70 % );
-    alternate-background-selected:  rgba ( 22, 160, 133, 100 % );
-    alternate-foreground-selected:  rgba ( 248, 248, 242, 100 % );
-    urgent-background:              rgba ( 40, 52, 58, 100 % );
+    active-foreground-selected:     @border-color;
+    alternate-background:           rgba ( 255, 255, 255, 7 % );
+    alternate-foreground:           @normal-foreground;
+    alternate-background-selected:  @border-color;
+    alternate-foreground-selected:  @normal-foreground-selected;
+    urgent-background:              @normal-background;
     urgent-foreground:              rgba ( 253, 214, 15, 70 % );
-    urgent-background-selected:     rgba ( 22, 160, 133, 100 % );
+    urgent-background-selected:     @border-color;
     urgent-foreground-selected:     rgba ( 253, 214, 15, 100 % );
 }
 #window {
