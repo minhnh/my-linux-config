@@ -1,0 +1,3 @@
+rofi.eh: 2
+rofi.font: Cantarell 12
+rofi.theme: /usr/share/rofi/themes/manjaro-i3-rofi.rasi
