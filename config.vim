@@ -9,7 +9,7 @@ let g:ycm_python_binary_path = '/usr/bin/python3'
 map ; :Files<CR>
 
 " NERDTree setup
-map <C-O> :NERDTreeToggle<CR>
+map <C-I> :NERDTreeToggle<CR>
 
 " lightline setup
 set laststatus=2
@@ -38,4 +38,9 @@ Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 
 call plug#end()
+
+" YCM shortcuts
+nnoremap <leader>gdf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gdc :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gt :YcmCompleter GoTo<CR>
 
