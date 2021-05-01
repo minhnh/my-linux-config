@@ -6,6 +6,6 @@ export MANPATH="$HOME/.local/node/lib/node_modules/npm/man:$MANPATH"
 export PATH="$HOME/.local/robo3t/bin:$PATH"
 
 # GEM
-export RUBY_VERSION="2.6.0"
+export RUBY_VERSION="2.7.0"
 export PATH="$HOME/.gem/ruby/$RUBY_VERSION/bin:$PATH"
 
