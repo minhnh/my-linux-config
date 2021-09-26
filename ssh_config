@@ -1,57 +1,8 @@
-Host ea-os-hub-nbv5-testing-mnguy12s
-    HostName 10.20.168.218
-    User mnguy12s
-    IdentityFile ~/.ssh/id_rsa
-
-Host ea-os-hub-nbv5-testing-ubuntu
-    HostName 10.20.168.218
-    User ubuntu
-    IdentityFile ~/.ssh/os_data_server.pem
-
-Host ea-os-hub-nbv5-grading-mnguy12s
-    HostName 10.20.168.217
-    User mnguy12s
-    IdentityFile ~/.ssh/id_rsa
-
-Host ea-os-hub-nbv5-grading-ubuntu
-    HostName 10.20.168.217
-    User ubuntu
-    IdentityFile ~/.ssh/os_data_server.pem
-
-Host ea-os-hub-nbv7-testing
-    HostName 10.20.168.213
-    User mnguy12s
-    IdentityFile ~/.ssh/id_rsa
-
-Host ea-os-db-server-ubuntu
-    HostName digiklausur.ddns.net
-    #HostName 194.95.66.231
-    #HostName 10.20.168.206
-    User ubuntu
-    IdentityFile ~/.ssh/os_data_server.pem
-
-Host ea-os-db-server-mnguy12s
-    HostName digiklausur.ddns.net
-    #HostName 194.95.66.231
-    #HostName 10.20.168.206
-    User mnguy12s
-    IdentityFile ~/.ssh/id_rsa
-
-Host e-assessment-db-server
-    HostName 35.187.5.123
-    User minhnh_91
-    IdentityFile ~/.ssh/id_rsa
-
-Host fetch-fetch3
-    HostName 10.10.0.110
-    IdentityFile ~/.ssh/id_rsa_fetch
-    User brsu
-
 Host brs-home
     HostName home.inf.h-brs.de
     IdentityFile ~/.ssh/id_rsa
-    #User mnguye2m
-    User mnguy12s
+    User mnguye2m
+    #User mnguy12s
 
 Host ux2o01
     HostName ux-2o01.inf.fh-bonn-rhein-sieg.de
