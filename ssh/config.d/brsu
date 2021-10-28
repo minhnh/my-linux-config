@@ -1,0 +1,16 @@
+Host brs-home
+    HostName home.inf.h-brs.de
+    IdentityFile ~/.ssh/id_rsa
+    User mnguye2m
+    #User mnguy12s
+
+Host brs-tesla-local
+    HostName 192.168.88.53
+    IdentityFile ~/.ssh/id_rsa
+    User mnguy12s
+
+Host brs-tesla
+    IdentityFile ~/.ssh/id_rsa
+    ProxyCommand ssh brs-home -W 10.20.118.36:10022
+    User mnguy12s
+

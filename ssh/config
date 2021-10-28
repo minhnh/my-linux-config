@@ -1,0 +1,4 @@
+Include ~/.ssh/config.d/brsu
+Include ~/.ssh/config.d/freddy
+Include ~/.ssh/config.d/lucy
+

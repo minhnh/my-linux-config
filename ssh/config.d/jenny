@@ -1,0 +1,16 @@
+Host cob3
+    HostName 192.168.1.103
+    IdentityFile ~/.ssh/id_rsa
+    User minh
+    HostkeyAlgorithms +ssh-dss
+
+Host cob2
+    HostName 192.168.1.102
+    IdentityFile ~/.ssh/id_rsa
+    User minh
+
+Host cob1
+    HostName 192.168.1.101
+    IdentityFile ~/.ssh/id_rsa
+    User minh
+

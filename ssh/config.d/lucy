@@ -1,0 +1,9 @@
+Host hsrb-mnguyen
+    HostName 192.168.50.201
+    User mnguyen
+    IdentityFile ~/.ssh/id_rsa
+
+Host hsrb-lucy
+    HostName 192.168.50.201
+    User lucy
+
