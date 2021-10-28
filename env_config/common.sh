@@ -23,6 +23,8 @@ export EDITOR='vim'
 # Different prompt for SSH sessions
 if [ -n "$SSH_CLIENT" ]; then
     PS1=$'\n\e[01;33m\[%n@%m\]\e[0m'"$PS1"
+    # ensure GPG use terminal-based authentication
+    export GPG_TTY=$(tty)
 fi
 
 # Lines configured by zsh-newuser-install
