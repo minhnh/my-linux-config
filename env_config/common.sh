@@ -20,6 +20,9 @@ export DOCKER_ID_USER="minhnh91"
 
 export EDITOR='vim'
 
+# ensure GPG use terminal-based authentication
+export GPG_TTY=$(tty)
+
 # Different prompt for SSH sessions
 if [ -n "$SSH_CLIENT" ]; then
     PS1=$'\n\e[01;33m\[%n@%m\]\e[0m'"$PS1"
@@ -32,8 +35,4 @@ HISTFILE=~/.config/env_config/.histfile
 HISTSIZE=10000
 SAVEHIST=15000
 setopt appendhistory autocd
-
-# Ubuntu 16 bluetooth problem
-# (need sudo apt-get install pulseaudio-module-bluetooth)
-# pactl load-module module-bluetooth-discover
 
