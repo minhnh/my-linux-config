@@ -35,7 +35,7 @@ cyberghost-country-list() {
     # if connection type not specified, use '--traffic';
     [[ -z "$2" ]] && conn_type='traffic' || conn_type=$2;
 
-    cmd="$CYBERGHOST_CMD --$conn_type --country-code $country_code";
+    cmd="sudo $CYBERGHOST_CMD --$conn_type --country-code $country_code";
     echo "command: $cmd";
     sh -c "$cmd";
 }

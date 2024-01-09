@@ -7,8 +7,8 @@
 #export PKG_CONFIG_PATH="$HOME/.local/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
 
 # LUA
-#export LUA_VERSION="5.1"
-#export LUA_PATH="$HOME/.local/share/lua/${LUA_VERSION}/?.lua${LUA_PATH:+;${LUA_PATH}}"
+export LUA_VERSION="5.4"
+export LUA_PATH="/usr/share/lua/${LUA_VERSION}/?.lua;$HOME/.local/share/lua/${LUA_VERSION}/?.lua${LUA_PATH:+;${LUA_PATH}}"
 
 # Docker
 export DOCKER_ID_USER="minhnh91"
@@ -33,7 +33,5 @@ HISTSIZE=10000
 SAVEHIST=15000
 setopt appendhistory autocd
 
-# Ubuntu 16 bluetooth problem
-# (need sudo apt-get install pulseaudio-module-bluetooth)
-# pactl load-module module-bluetooth-discover
-
+# FZF with ripgrep integration
+export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
