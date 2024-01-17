@@ -1,0 +1,4 @@
+Host ub-login
+    HostName login.informatik.uni-bremen.de
+    IdentityFile ~/.ssh/id_rsa-uni_bremen
+    User nguyenm

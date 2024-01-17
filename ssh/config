@@ -1,4 +1,6 @@
 Include ~/.ssh/config.d/brsu
 Include ~/.ssh/config.d/freddy
 Include ~/.ssh/config.d/lucy
+Include ~/.ssh/config.d/home
+Include ~/.ssh/config.d/uni-bremen
 
