@@ -34,4 +34,4 @@ SAVEHIST=15000
 setopt appendhistory autocd
 
 # FZF with ripgrep integration
-export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
+export FZF_DEFAULT_COMMAND='rg --files --follow --hidden --glob=!.git/'
