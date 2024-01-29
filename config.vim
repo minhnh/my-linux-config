@@ -7,10 +7,10 @@ let g:ycm_python_binary_path = '/usr/bin/python3'
 
 " fzf setup
 map ; :Files<CR>
-noremap <expr> <F3> ':Rg '.expand('<cword>')
+noremap <expr> <F2> ':Rg '.expand('<cword>')
 
 " search and replace
-noremap <expr> <F2> ':%s/'.expand('<cword>').'//cgI<left><left><left><left>'
+noremap <expr> <F3> ':%s/'.expand('<cword>').'//cgI<left><left><left><left>'
 
 " NERDTree setup
 map <C-I> :NERDTreeToggle<CR>
