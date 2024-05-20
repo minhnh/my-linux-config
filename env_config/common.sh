@@ -18,7 +18,7 @@ export DOCKER_ID_USER="minhnh91"
 #export WORKON_HOME=$HOME/workspace/virtualenvs
 #source virtualenvwrapper.sh
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Different prompt for SSH sessions
 if [ -n "$SSH_CLIENT" ]; then
@@ -34,4 +34,11 @@ SAVEHIST=15000
 setopt appendhistory autocd
 
 # FZF with ripgrep integration
-export FZF_DEFAULT_COMMAND='rg --files --follow --hidden --glob=!.git/'
+#export FZF_DEFAULT_COMMAND='rg --files --follow --hidden --glob=!.git/'
+
+export VENV_PATH=$HOME/ws/venvs
+function source_venv() {
+    # $1: venv name
+    source "$VENV_PATH/$1/bin/activate"
+    export PKG_CONFIG_PATH="$VENV_PATH/$1/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
+}
