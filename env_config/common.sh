@@ -7,16 +7,17 @@
 #export PKG_CONFIG_PATH="$HOME/.local/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
 
 # LUA
-export LUA_VERSION="5.4"
-export LUA_PATH="/usr/share/lua/${LUA_VERSION}/?.lua;$HOME/.local/share/lua/${LUA_VERSION}/?.lua${LUA_PATH:+;${LUA_PATH}}"
+#export LUA_VERSION="5.4"
+#export LUA_PATH="/usr/share/lua/${LUA_VERSION}/?.lua;$HOME/.local/share/lua/${LUA_VERSION}/?.lua${LUA_PATH:+;${LUA_PATH}}"
 
 # Docker
 export DOCKER_ID_USER="minhnh91"
 
 # Virual environments
-#export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-#export WORKON_HOME=$HOME/workspace/virtualenvs
-#source virtualenvwrapper.sh
+export VENV_HOME="$HOME/ws/envs"
+source_env () {
+    source "$VENV_HOME/$1/bin/activate"
+}
 
 export EDITOR='nvim'
 

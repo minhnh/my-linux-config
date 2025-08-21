@@ -1,5 +1,5 @@
 Host darthpi3
-    HostName 192.168.178.78
+    HostName 192.168.178.26
     User minh
     IdentityFile ~/.ssh/id_rsa
  

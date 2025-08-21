@@ -2,3 +2,10 @@ Host ub-login
     HostName login.informatik.uni-bremen.de
     IdentityFile ~/.ssh/id_rsa-uni_bremen
     User nguyenm
+
+# Connections on SECORO Subnet, e.g. via VPN
+Host secoro-ryzenws-subnet
+    Hostname 10.23.1.1
+    Port 2210
+    IdentityFile ~/.ssh/id_rsa_pwd
+    User nguyenm
