@@ -14,9 +14,11 @@
 export DOCKER_ID_USER="minhnh91"
 
 # Virual environments
-export VENV_HOME="$HOME/ws/envs"
-source_env () {
-    source "$VENV_HOME/$1/bin/activate"
+export VENV_PATH=$HOME/ws/envs
+function source_venv() {
+    VENV_NAME=$1
+    source "$VENV_PATH/$VENV_NAME/bin/activate"
+    export PKG_CONFIG_PATH="$VENV_PATH/$VENV_NAME/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
 }
 
 export EDITOR='nvim'
@@ -36,10 +38,3 @@ setopt appendhistory autocd
 
 # FZF with ripgrep integration
 #export FZF_DEFAULT_COMMAND='rg --files --follow --hidden --glob=!.git/'
-
-export VENV_PATH=$HOME/ws/venvs
-function source_venv() {
-    # $1: venv name
-    source "$VENV_PATH/$1/bin/activate"
-    export PKG_CONFIG_PATH="$VENV_PATH/$1/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
-}
