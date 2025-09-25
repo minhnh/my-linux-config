@@ -5,5 +5,7 @@
 
     "MD013": { "line_length": 120, "code_block_line_length": 300, "tables": false },
 
+    "MD004": { "style": "sublist" },
+
     "MD024": { "siblings_only": true }
 }

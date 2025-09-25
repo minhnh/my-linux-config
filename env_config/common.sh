@@ -14,16 +14,16 @@
 export DOCKER_ID_USER="minhnh91"
 
 # Virual environments
-export VENV_HOME="$HOME/ws/venvs"
+VENV_ROOT="$HOME/ws/envs"
 function source_venv () {
     # $1: venv name
-    export VENV_ROOT="$VENV_HOME/$1"
-    source "$VENV_ROOT/bin/activate"
+    VENV_HOME="$VENV_ROOT/$1"
+    source "$VENV_HOME/bin/activate"
     # Setup libraries for CMake
-    export CMAKE_INSTALL_PREFIX="$VENV_ROOT"
-    #export LIBRARY_PATH="$VENV_ROOT/lib${LIBRARY_PATH:+:${LIBRARY_PATH}}"
-    export LD_LIBRARY_PATH="$VENV_ROOT/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
-    export PKG_CONFIG_PATH="$VENV_ROOT/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
+    export CMAKE_INSTALL_PREFIX="$VENV_HOME"
+    #export LIBRARY_PATH="$VENV_HOME/lib${LIBRARY_PATH:+:${LIBRARY_PATH}}"
+    export LD_LIBRARY_PATH="$VENV_HOME/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+    export PKG_CONFIG_PATH="$VENV_HOME/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
 }
 
 export EDITOR='nvim'
