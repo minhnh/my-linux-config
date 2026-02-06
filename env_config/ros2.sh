@@ -33,6 +33,13 @@ source_ros_ws () {
 
     ROS_WS_HOME="$ROS_WS_ROOT/$ROS_DISTRO/$ENV_NAME"
 
+    VIRT_ENV_ACTIVATE="$ROS_WS_HOME/venv/bin/activate"
+    if [ ! -f "$VIRT_ENV_ACTIVATE" ] ; then
+        echo "No Python virtual environment found at $VIRT_ENV_ACTIVATE"
+    else
+        source "$VIRT_ENV_ACTIVATE"
+    fi
+
     SETUP_FILE="$ROS_WS_HOME/install/setup.zsh"
     if [ ! -f $SETUP_FILE ] ; then
         echo "setup file doesn't exit: $SETUP_FILE"
