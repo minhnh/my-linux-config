@@ -1,3 +1,7 @@
+# Export config directory
+if [ -z $ENV_CONFIG_DIR ] ; then
+    export ENV_CONFIG_DIR="$(dirname $0)"
+fi
 # zsh handles new lines differently
 NEWLINE=$'\n'
 
@@ -47,9 +51,9 @@ source_ros_ws () {
     fi
 
     source "$ROS_WS_HOME/install/setup.zsh"
+    source "$ENV_CONFIG_DIR/ros2cd/roscd.sh"
     export ROS_WS_HOME
     export ROS_DISTRO
-    alias roscd="cd $ROS_WS_HOME/src"
     fix_zsh_autocomplete
     export PS1="$NEWLINE($ROS_DISTRO/$ENV_NAME)$PS1"
 }

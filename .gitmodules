@@ -1,0 +1,4 @@
+[submodule "env_config/ros2cd"]
+	path = env_config/ros2cd
+	url = https://github.com/Martin-Oehler/ros2cd
+	branch = zsh_compatibility

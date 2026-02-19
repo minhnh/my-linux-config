@@ -1,3 +1,8 @@
+# Export config directory
+if [ -z $ENV_CONFIG_DIR ] ; then
+    export ENV_CONFIG_DIR="$(dirname $0)"
+fi
+
 # GCC directories
 #export PATH="$HOME/.local/bin${PATH:+:${PATH}}"
 #export MANPATH="$HOME/.local/man:/usr/local/share/man:/usr/share/man${MANPATH:+:${MANPATH}}"
