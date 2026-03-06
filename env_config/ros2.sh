@@ -55,5 +55,6 @@ source_ros_ws () {
     export ROS_WS_HOME
     export ROS_DISTRO
     fix_zsh_autocomplete
+    export RCUTILS_COLORIZED_OUTPUT=1
     export PS1="$NEWLINE($ROS_DISTRO/$ENV_NAME)$PS1"
 }
