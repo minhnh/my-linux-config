@@ -1,5 +1,14 @@
 Host darthpi3
-    HostName 192.168.178.26
+    HostName 192.168.178.100
     User minh
     IdentityFile ~/.ssh/id_rsa
- 
+
+Host darthnasvm
+    HostName 192.168.178.21
+    User minh
+    IdentityFile ~/.ssh/id_rsa
+
+Host darthwheels
+    HostName 192.168.178.35
+    User minh
+    IdentityFile ~/.ssh/id_rsa
