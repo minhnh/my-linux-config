@@ -4,8 +4,9 @@ Host ub-login
     User nguyenm
 
 # Connections on SECORO Subnet, e.g. via VPN
-Host secoro-ryzenws-subnet
-    Hostname 10.23.1.1
-    Port 2210
-    IdentityFile ~/.ssh/id_rsa_pwd
+Host secoro-ryzenws
+    Hostname 10.23.1.10
+    User nguyenm
+Host secoro-mfws
+    Hostname 10.23.1.11
     User nguyenm
