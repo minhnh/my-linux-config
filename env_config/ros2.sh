@@ -19,7 +19,7 @@ source_ros_ws () {
     ROS_DISTRO="kilted"
 
     usage() {
-        echo "Soruce ROS workspace in '$ROS_WS_ROOT'$NEWLINE"
+        echo "Source ROS workspace in '$ROS_WS_ROOT'$NEWLINE"
         echo "usage: $SCRIPT_NAME <ros_ws_name> <(optional)distro_name>"
     }
 
@@ -54,6 +54,9 @@ source_ros_ws () {
     source "$ROS_WS_HOME/install/setup.zsh"
     # requires python3-colcon-cd
     source /usr/share/colcon_cd/function/colcon_cd.sh
+    cd $ROS_WS_HOME
+    colcon_cd --set
+    cd -
     export ROS_WS_HOME
     export ROS_DISTRO
     fix_zsh_autocomplete
