@@ -50,8 +50,10 @@ source_ros_ws () {
         return 1
     fi
 
+    source "/opt/ros/${ROS_DISTRO}/setup.zsh"
     source "$ROS_WS_HOME/install/setup.zsh"
-    source "$ENV_CONFIG_DIR/ros2cd/roscd.sh"
+    # requires python3-colcon-cd
+    source /usr/share/colcon_cd/function/colcon_cd.sh
     export ROS_WS_HOME
     export ROS_DISTRO
     fix_zsh_autocomplete
